@@ -1,0 +1,15 @@
+//vars
+$main_grey_color: #f4f4f4;
+$button_bg_color: #0271c7;
+$added_event: #c2e4fe;
+
+//layout
+@import 'css/default/mixins';
+@import 'css/default/reset-styles';
+@import 'css/default/adjustment';
+
+//styles
+@import "css/sections/header";
+@import "css/sections/navigate";
+@import "css/sections/calendar";
+@import "css/sections/footer";

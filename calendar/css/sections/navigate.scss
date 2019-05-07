@@ -1,0 +1,39 @@
+
+.month-navigate-wrap {
+  margin-top: 15px;
+
+  .month-navigate {
+    h2 {
+      font-size:  20px;
+    }
+    @include prefix-flexbox();
+    max-width: 210px;
+    width: 100%;
+    @include prefix-justify-content(space-between);
+    @include prefix-align-items(center);
+
+    .nav-button {
+
+      width: 17px;
+      height: 17px;
+      @include prefix-border-radius(3px);
+      background: url("./img/button-nav.png") center center no-repeat;
+      border: 1px solid #dfdfdf;
+      outline: none;
+
+      &.right {
+        transform: rotate(180deg);
+      }
+    }
+    .current-date-button {
+      background: none;
+      border: 1px solid #dfdfdf;
+      @include prefix-border-radius(3px);
+      outline: none;
+      font-size: 12px;
+    }
+  }
+}
+
+
+

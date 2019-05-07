@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <header>
+            <div class="container">
+                <div class="header-items">
+                    <div class="buttons-wrap">
+                        <button >Добавить</button>
+                        <button >Обновить</button>
+                    </div>
+                    <div class="search-field-wrap">
+                        <input class="search-field" type="text" placeholder="Событие, дата или участник">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="month-navigate-wrap">
+                    <div class="month-navigate">
+                        <button class="nav-button left"></button>
+                            <h2>Март <span class="year">2013</span></h2>
+                        <button class="nav-button right"></button>
+                        <button class="current-date-button">Сегодня</button>
+                    </div>
+                </div>
+                    <div class="calendar-wrap" id="calendar-wrap">
+                        <div class="calendar-week">
+                            <div class="calendar-day mon">Понедельник,
+                                <span class="day"> 25</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day tue">Вторник,
+                                <span class="day"> 26</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day wed">Среда,
+                                <span class="day"> 27</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day thu">Четверг,
+                                <span class="day"> 28</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day fri">Пятница,
+                                <span class="day"> 1</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day sat current-day left-side">Суббота,
+                                <span class="day"> 2</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div></div>
+                            <div class="calendar-day sun left-side">Воскресенье,
+                                <span class="day">25</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                         </div>
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <span class="day"> 4</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">5</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">6</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">7</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">8</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day added-event left-side">
+                                <span class="day">9</span>
+                                <div class="event-name">Напиться!</div>
+                                <div class="member">Витя Костин, Петя Михайлов</div>
+                                 <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">10</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                        </div>
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <span class="day">11</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">12</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">13</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">14</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">15</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">16</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">17</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                        </div>
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <span class="day">19</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">19</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">20</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">21</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day added-event">
+                                <span class="day">22</span>
+                                <div class="event-name">ДР!</div>
+                                <div class="member">Дима Молодцов</div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">23</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">24</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                        </div>
+                        <div class="calendar-week">
+                            <div class="calendar-day">
+                                <span class="day">25</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">26</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">27</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">28</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day">
+                                <span class="day">29</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">30</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div class="calendar-day left-side">
+                                <span class="day">31</span>
+                                <div class="event-name"></div>
+                                <div class="member"></div>
+                                <div class="description"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
+</div>
+
+</div>
+
+</body>
+</html>
